@@ -1,0 +1,24 @@
+import random
+from random import randint
+
+#initially,
+
+x = 0
+y = 0
+z = 0
+
+print("Enter values of x, y and z-axis of your phone's accelerometer {.., -1, 0, 1, 2,..}")
+
+x = int(input("Enter value of x"))
+y = int(input("Enter value of y"))
+z = int(input("Enter value of z"))
+
+if x == 0 and y == 0 and z == 0:
+	print("You are standing")
+elif x > 0 and y == 0 and z == 0:
+		if x > 10:
+			print("You are running")
+		else:
+			print("You are walking")
+elif x > 0 and y < 0 and z == 0:
+	print("You are sitting")
